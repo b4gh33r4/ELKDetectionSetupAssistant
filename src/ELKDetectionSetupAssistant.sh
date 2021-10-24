@@ -1,16 +1,4 @@
 #!/bin/bash
-######################################################################
-# NAME: ELKDetectionSetupAssistant.sh
-# VERSION: 1.1
-# DATE: 21/10/2021
-######################################################################
-# DESCRIPTION:
-# THIS SCRIPT INSTALLS ELK ENABLING SECURITY DETECTION.
-######################################################################
-# TESTED ON:
-# - Ubuntu Server 18.04
-# - Ubuntu Server 20.04
-######################################################################
 
 if [ ! $UID -eq 0 ]; then
     echo "[*] Run as root"
@@ -23,6 +11,7 @@ ELKHOST="elk01"
 ELKDOMAIN="domain.local"
 LOGSTASHSSLFOLDER="/etc/logstash/ssl/"
 ELASTICSSLFOLDER="/etc/elasticsearch/ssl/"
+KIBANABASEURL="https://${ELKHOST}.${ELKDOMAIN}:5601/"
 KIBANASSLFOLDER="/etc/kibana/ssl/"
 WORKINGPATH="/tmp/"
 CAFILE="${WORKINGPATH}elastic-stack-ca"
@@ -140,6 +129,7 @@ echo "#          Custom configuration begins below: Do not edit manually.       
 echo "###############################################################################" >> /etc/kibana/kibana.yml
 echo "server.host: \"0.0.0.0\"" >> /etc/kibana/kibana.yml
 echo "server.name: \"${ELKHOST}\"" >> /etc/kibana/kibana.yml
+echo "server.publicBaseUrl: \"${KIBANABASEURL}\"" >> /etc/kibana/kibana.yml
 echo "elasticsearch.hosts: [ \"https://${ELKHOST}.${ELKDOMAIN}:9200\" ]" >> /etc/kibana/kibana.yml
 echo "elasticsearch.ssl.certificateAuthorities: [ \"${KIBANASSLFOLDER}ca/ca.crt\" ]" >> /etc/kibana/kibana.yml
 echo "elasticsearch.username: \"kibana_system\"" >> /etc/kibana/kibana.yml
