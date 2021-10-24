@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/b4gh33r4/ELKDetectionSetupAssistant/dev/misc/logo.png" align="center" width="100px" alt="ELK Detection Setup Assistant">
+<img src="misc/logo.png" align="center" width="100px" alt="ELK Detection Setup Assistant">
 	
 # ELK Detection Setup Assistant
 
