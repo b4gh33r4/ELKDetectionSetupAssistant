@@ -1,16 +1,4 @@
 #!/bin/bash
-######################################################################
-# NAME: ELKDetectionSetupAssistant.sh
-# VERSION: 1.2
-# DATE: 22/10/2021
-######################################################################
-# DESCRIPTION:
-# THIS SCRIPT INSTALLS ELK ENABLING SECURITY DETECTION.
-######################################################################
-# TESTED ON:
-# - Ubuntu Server 18.04
-# - Ubuntu Server 20.04
-######################################################################
 
 if [ ! $UID -eq 0 ]; then
     echo "[*] Run as root"
