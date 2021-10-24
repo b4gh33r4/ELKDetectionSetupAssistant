@@ -1,4 +1,4 @@
-<img src="misc/logo.png" align="center" width="100px" alt="ELK Detection Setup Assistant">
+<img src="misc/logo.png" style="float:right" width="80px" alt="ELK Detection Setup Assistant">
 	
 # ELK Detection Setup Assistant
 
