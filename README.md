@@ -1,6 +1,6 @@
 <img src="misc/logo.png" style="float:right" width="500px" alt="ELK Detection Setup Assistant">
 
-ELK Detection Setup Assistant is a `bash` script implemented to support the installation of the ELK stack and to enable Security Detection in a self-managed deployment.
+ELK Detection Setup Assistant is a `bash` script implemented to support the installation of the ELK stack 7.x and to enable Security Detection in a self-managed deployment.
 
 ## Use Cases
 
@@ -28,7 +28,7 @@ Finally, you have to use a `bash` terminal with `root` privileges and run the fo
 
 ## More
 
-The script enables a demo `Logstash` pipeline to parse and ingest contents sent by `Beats` data shippers.
+The script enables an authenticated demo `Logstash` pipeline to parse and ingest contents sent by `Beats` data shippers.
 
 ## Requirements
 
