@@ -10,20 +10,20 @@ The script is suitable for `testing` and `evaluation` purposes, it is not design
 
 To start using the script you have to `clone` this repo . . .
 
-```bash
-$ git clone https://github.com/b4gh33r4/ELKDetectionSetupAssistant.git
+```console
+foo@bar:~$ git clone https://github.com/b4gh33r4/ELKDetectionSetupAssistant.git
 ```
 . . . and make the script `executable`.
 
-```bash
-$ cd ELKDetectionSetupAssistant/src
-$ chmod +x ELKDetectionSetupAssistant.sh
+```console
+foo@bar:~$ cd ELKDetectionSetupAssistant/src
+foo@bar:~$ chmod +x ELKDetectionSetupAssistant.sh
 ```
 
 Finally, you have to use a `bash` terminal with `root` privileges and run the following command:
 
-```bash
-# ./ELKDetectionSetupAssistant.sh
+```console
+root@bar:~# ./ELKDetectionSetupAssistant.sh
 ```
 
 ## More
